@@ -1,0 +1,17 @@
+1683817602221	geckodriver	INFO	Listening on 127.0.0.1:53417
+1683817807084	geckodriver	INFO	Listening on 127.0.0.1:53623
+1683820572644	geckodriver	INFO	Listening on 127.0.0.1:54097
+drivers/geckodriver.exe: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver.exe --port <PORT>
+
+For more information try --help
+
+./drivers/geckodriver.exe: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver.exe --port <PORT>
+
+For more information try --help
+
