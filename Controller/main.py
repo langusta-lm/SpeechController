@@ -9,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 
-from step1.func_on_words import check_command_in_query, remove_command_from_query
+from Controller.func_on_words import check_command_in_query, remove_command_from_query
 from word_matrix import *
 from operations_on_element import highlight_rect_on_elements, find_text_element_in_webdriver, \
     click_webelement, type_text, highlight_rect_on_element, type_enter
