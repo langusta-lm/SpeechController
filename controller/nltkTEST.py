@@ -11,7 +11,6 @@
 # nltk.download('punkt')
 # nltk.download('plwordnet')
 # nltk.download('omw-1.4')
-import nltk
 
 zdanie = "NIEDZIALA DO USUNIECIA."
 
@@ -54,7 +53,6 @@ def elo2():
 
 def test3():
     def wykonaj_klikanie(tekst):
-        import nltk
         from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
         tokeny = word_tokenize(tekst.lower())
@@ -75,13 +73,11 @@ def test3():
 
 
 def test4():
-    import nltk
     from nltk.tokenize import word_tokenize
     from nltk.tag import pos_tag
-    from nltk.corpus import stopwords
 
     def sprawdz_rzeczownik(tekst, slowo_kliknij):
-        from word_matrix import mw_stopwords277
+        from matrix_of_words.word_matrix import mw_stopwords277
         stop_words = set(mw_stopwords277)  # Pobieramy listę zbędnych wyrazów dla języka polskiego
 
         tekst = tekst.lower()
@@ -123,7 +119,6 @@ def test4():
 
 
 def test5():
-    import nltk
     from nltk.tokenize import word_tokenize
     from nltk.tag import pos_tag
 
@@ -156,7 +151,6 @@ def test5():
 
 def test6():
     def kategoryzuj_czesci_mowy(zdanie):
-        import nltk
         from nltk.tokenize import word_tokenize
         from nltk.tag import pos_tag
         tokeny = word_tokenize(zdanie)
@@ -164,7 +158,7 @@ def test6():
         return tagi
 
     def translate_tags(tags):
-        from word_matrix import part_of_speech
+        from matrix_of_words.word_matrix import part_of_speech
         for token, tag in tags:
             print("%s - %s" % (token, part_of_speech[tag]))
 
@@ -310,7 +304,7 @@ def test10():
 
 
 def test11():
-    from word_matrix import *
+    pass
 
 # test10()
 # znajdz_synonim('niezdefiniowany')

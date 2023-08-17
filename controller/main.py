@@ -3,16 +3,15 @@ import time
 
 import speech_recognition as sr
 import asyncio
-import pyautogui
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 
-from Controller.func_on_words import check_command_in_query, remove_command_from_query
-from word_matrix import *
-from operations_on_element import highlight_rect_on_elements, find_text_element_in_webdriver, \
-    click_webelement, type_text, highlight_rect_on_element, type_enter
+from matrix_of_words.func_on_words import check_command_in_query, remove_command_from_query
+from matrix_of_words.word_matrix import *
+from driver_factor.operations_on_element import highlight_rect_on_elements, find_text_element_in_webdriver, \
+    click_webelement, highlight_rect_on_element
 
 INFO_DEBUG = True
 THREADERS_RED_RECT: threading = []

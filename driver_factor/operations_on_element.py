@@ -1,12 +1,9 @@
 import random
-from generator_js import porysuj_background
-import asyncio
+from js_func.generator_js import porysuj_background
 import threading
 from selenium.webdriver.common.keys import Keys
-from selenium.common import NoSuchWindowException, NoSuchElementException, ElementNotInteractableException, TimeoutException
+from selenium.common import ElementNotInteractableException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC, wait
 import time
 import re
 

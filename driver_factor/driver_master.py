@@ -1,5 +1,5 @@
 import random
-from generator_js import porysuj_background
+# from generator_js import porysuj_background
 import asyncio
 import threading
 from selenium.webdriver.common.keys import Keys
@@ -72,7 +72,8 @@ class FactoryDriver():
             return word_all
 
     def hightlight_element(self, element, color):
-        self.driver.execute_script(porysuj_background, element, color)
+        pass
+        # self.driver.execute_script(porysuj_background, element, color)
 
     def get_random_color(self):
         colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF", "#FFA500", "#FF1493",
